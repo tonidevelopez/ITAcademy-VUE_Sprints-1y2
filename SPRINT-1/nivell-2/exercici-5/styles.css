@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    max-width: 1200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* CABECERA */
+header{
+    height: 405px;
+    background-image: url("../images/header.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav img{
+    width: 75px;
+    margin-top: 50px;
+
+}
+
+nav a{
+    color: #6D6D6D;
+}
+
+nav a:hover{
+    color: #EA696D;
+}
+
+.menu{
+    display: flex;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.menu-li, .rrss-li{
+    list-style: none;
+}
+
+.menu-li a{
+    text-decoration: none;
+}
+
+.rrss{
+    display: flex;
+    margin-top: 50px;
+}
+
+.rrss-li{
+    margin: 0 10px;
+}
+
+header h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: #EA696D;
+    opacity: .7;
+    margin-top: 180px;
+}
+
+/* CENTRAL */
+.central {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+section {
+    background-color: #CFCECE;
+    display: flex;
+    padding: 10px;
+    width: 75%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+article{
+    background-color: white;
+    padding: 10px;
+    width: 48%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .03em;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-fecha{
+    color: #E4D17D;
+    position: relative;
+    bottom: 25px;
+    left: 5px;
+}
+
+.card-titulo{
+    background-color: #EA696D;
+    color: white;
+    margin-top: -15px;
+    padding: 10px 0 3px 5px;
+}
+
+.card-texto{
+    columns: 2;
+    margin: 15px 0;
+    padding: 5px;
+    color: #4E4D4D;
+}
+
+.card-mas{
+    text-decoration: none;
+    color: #7E7D7D;
+    padding-left: 5px;
+}
+
+.section-footer{
+    text-align: center;
+    padding: 2px;
+    font-weight: bold;
+}
+
+aside {
+    background-color: #CFCECE;
+    text-align: center;
+    padding: 30px;
+    flex: 1;
+}
+
+.aside-p {
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #CFCECE;
+    margin-top: 10px;
+    color: #4E4D4D;
+    text-align: center;
+}
+
+footer p{
+    padding: 10px;
+    margin: 0 10px;
+    background-color: white;
+}
+
+/* MEDIAQUERIES */
+@media only screen and (max-width: 768px) {
+    .menu-li{
+        font-size: .8rem;
+    }
+        
+    .rrss-li{
+        margin-left: 0;
+        font-size: .8rem;
+    }    
+    .central {
+        flex-direction: column;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .card-texto{
+        columns: 1;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+        padding: 15px;
+    }
+
+    .menu{
+        display: block;
+        order: -1;
+        margin: 0;
+        width: 100px;
+    }
+
+    nav img{
+        margin: 0 40px 0 0;
+    }
+    
+    .rrss{
+        display: flex;
+        margin: 0;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .card-texto{
+        columns: 2;
+    }
+}

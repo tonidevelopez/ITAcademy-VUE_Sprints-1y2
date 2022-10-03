@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    max-width: 1200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    margin: 20px;
+}
+
+/* CABECERA */
+header {
+    background-color: #000000;
+    padding: 20px;
+}
+
+nav {
+    background-color: #223047;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+nav .logo {
+    background-color: #E23C44;
+    padding: 10px;
+    flex: 1 1 auto;
+}
+
+nav .menu {
+    background-color: #E23C44;
+    padding: 10px;
+    flex: 5 1 auto;
+}
+
+nav .rrss {
+    background-color: #E23C44;
+    padding: 10px;
+    flex: 1 1 auto;
+}
+
+.cabecera {
+    background-color: #EA6531;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.cabecera .titulo {
+    background-color: #FDCC4E;
+    padding: 10px;
+}
+
+/* CENTRAL */
+.central {
+    background-color: #000000;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+section {
+    background-color: #3D3C57;
+    padding: 20px;
+    flex: 2 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+article {
+    background-color: #1A57A0;
+    padding: 10px;
+    flex: 1 1 45%;
+}
+
+.article-footer {
+    background-color: #5E91B7;
+    padding: 10px;
+    flex: 1 1 100%;
+}
+
+aside {
+    background-color: #F22541;
+    padding: 20px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aside-p {
+    background-color: #FDE773;
+    padding: 10px;
+    width: 100%;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000000;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.footer-texto {
+    background-color: #DFA124;
+    padding: 10px;
+}
+
+/* MEDIAQUERIES */
+@media only screen and (max-width: 768px) {
+    .central {
+        background-color: #FEFF0C;
+        flex-direction: column;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav .logo {
+        width: 100%;
+    }
+
+    nav .menu {
+        width: 100%;
+    }
+
+    nav .rrss {
+        width: 100%;
+    }
+
+    section {
+        background-color: #0D3E5C;
+        flex-direction: column;
+    }
+
+    article {
+        background-color: #50838A;
+        width: 100%;
+    }
+
+    .article-footer {
+        background-color: #94D7BF;
+        width: 100%;
+    }
+
+    aside {
+        background-color: #FA6443;
+    }
+
+    .aside-p {
+        background-color: #FBA459;
+    }
+}
